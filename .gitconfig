@@ -10,7 +10,8 @@
 	# commits
   ci = commit
   amend = commit --amend
-  ciam = commit -a -m 
+  ciam = commit -a -m
+  ciallm = !git add -A && git commit -m
 
   # branches
   co = checkout
