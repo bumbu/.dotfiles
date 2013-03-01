@@ -1,0 +1,25 @@
+[core]
+	autocrlf = true
+	editor = vim
+[user]
+  email = bmbalex@gmail.com
+  name = bumbu
+[color]
+	ui = true
+[alias]
+	# commits
+  ci = commit
+  amend = commit --amend
+  ciam = commit -a -m 
+
+  # branches
+  co = checkout
+  cd = checkout
+  pwd = branch
+  new = checkout -b
+  delete = branch -d
+
+  # logs
+  st = status
+  hist = log --pretty=format:\"%h %ad | %s%d [%an]\" --graph --date=short
+  logtree = "log --graph --oneline --decorate --all"
