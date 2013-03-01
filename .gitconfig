@@ -4,6 +4,8 @@
 [user]
   email = bmbalex@gmail.com
   name = bumbu
+[push]
+  default = simple
 [color]
 	ui = true
 [alias]
