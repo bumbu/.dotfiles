@@ -1,15 +1,15 @@
 [core]
-	autocrlf = true
-	editor = vim
+  autocrlf = true
+  editor = vim
 [user]
   email = bmbalex@gmail.com
   name = bumbu
 [push]
   default = simple
 [color]
-	ui = true
+  ui = true
 [alias]
-	# commits
+  # commits
   ci = commit
   amend = commit --amend
   ciam = commit -a -m
