@@ -30,6 +30,6 @@
   delete = branch -d
 
   # logs
-  st = status
+  st = status -s
   hist = log --pretty=format:\"%h %ad | %s%d [%an]\" --graph --date=short
   logtree = "log --graph --oneline --decorate --all"
