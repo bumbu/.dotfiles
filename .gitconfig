@@ -16,6 +16,9 @@
   default = simple
 
 [alias]
+  # show all aliases
+  la = "!git config -l | grep alias | cut -c 7-"
+
   # commits
   ci = commit
   amend = commit --amend
@@ -31,6 +34,30 @@
   whereiam = rev-parse --abbrev-ref HEAD
 
   # logs
+  ######
+  
   st = status -s
-  hist = log --pretty=format:\"%h %ad | %s%d [%an]\" --graph --date=short
-  logtree = "log --graph --oneline --decorate --all"
+
+  # list
+  l = log --pretty=format:"%C(yellow)%h%Cred%d\\ %Creset%s%Cblue\\ [%cn]" --decorate
+  
+  # list by time past
+  ld = log --pretty=format:"%C(green)%h\\ %C(yellow)[%ad]%Cred%d\\ %Creset%s%Cblue\\ [%cn]" --decorate --date=relative
+  
+  # list by date
+  lds = log --pretty=format:"%C(yellow)%h\\ %C(green)%ad%Cred%d\\ %Creset%s%Cblue\\ [%cn]" --decorate --date=short --graph
+  
+  # list by numstat
+  ln = log --pretty=format:"%C(yellow)%h%Cred%d\\ %Creset%s%Cblue\\ [%cn]" --decorate --numstat
+  
+  # list specific revision
+  lr  = "!f() { git l "$1"^.."$1"; }; f"
+
+  # diff last commit
+  dl = diff --cached HEAD^
+
+  # list modified files in last commit
+  dlf = "!git ln -1"
+
+  # diff specific revision
+  dr  = "!f() { git diff "$1"^.."$1"; }; f"
