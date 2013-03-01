@@ -28,6 +28,7 @@
   pwd = branch
   new = checkout -b
   delete = branch -d
+  whereiam = rev-parse --abbrev-ref HEAD
 
   # logs
   st = status -s
