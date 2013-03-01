@@ -9,6 +9,9 @@
 [color]
   ui = true
 
+[diff]
+  memonicprefix = true
+
 [push]
   default = simple
 
