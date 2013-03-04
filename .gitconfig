@@ -21,9 +21,10 @@
 
   # commits
   ci = commit
-  amend = commit --amend
+  cim = commit -m
   ciam = commit -a -m
   ciallm = !git add -A && git commit -m
+  amend = commit --amend
 
   # branches
   co = checkout
