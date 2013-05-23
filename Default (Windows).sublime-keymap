@@ -1,0 +1,23 @@
+[
+  {
+    "keys": ["ctrl+q"]
+  , "command": "toggle_comment"
+  , "args": {
+      "block": false
+    }
+  }
+  , {
+    "keys": ["f1"]
+  , "command": "goto_documentation"
+  }
+  , {
+      "keys": ["ctrl+shift+r"]
+    , "command": "browser_refresh"
+    , "args": {
+        "auto_save": true
+      , "delay": 0.5
+      , "activate_browser": true
+      , "browser_name" : "Google Chrome"
+      }
+    }
+]

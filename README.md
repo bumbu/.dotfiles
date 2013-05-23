@@ -14,3 +14,7 @@ My default git configuration
 ## Preferences.sublime-settings
 
 My custom sublime2 configuration
+
+## Default (Windows).sublime-keymap
+
+My custom sublime2 key bindings
