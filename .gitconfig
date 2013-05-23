@@ -40,6 +40,11 @@
   unassume = update-index --no-assume-unchanged
   assumed  = "!git ls-files -v | grep ^h | cut -c 3-"
 
+  # patch from diff
+  patch-create = diff --no-prefix
+  # patch based on branch difference
+  # git format-patch master -k --no-prefix --no-signature --stdout --no-stat
+
   # logs
   ######
   
