@@ -1,7 +1,6 @@
 {
   // View
   "bold_folder_labels": true
-, "color_scheme": "Packages/Theme - Customs/Monokai Soda.tmTheme"
 , "font_size": 11.0
 , "highlight_line": true
 , "show_tab_close_buttons": false
@@ -12,6 +11,7 @@
   [
     "Vintage"
   ]
+, "update_check": false
 
   // Tabulation
 , "tab_size": 2
