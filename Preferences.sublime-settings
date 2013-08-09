@@ -5,6 +5,7 @@
 , "highlight_line": true
 , "show_tab_close_buttons": false
 , "folder_exclude_patterns": ["node_modules", ".git"]
+, "scroll_past_end": true
 
   // System
 , "detect_slow_plugins": false
