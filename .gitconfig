@@ -35,10 +35,11 @@
   delete-merged-branches = "!f() { git checkout --quiet master && git branch --merged | grep --invert-match '\\*' | xargs -n 1 git branch --delete; git checkout --quiet @{-1}; }; f"
   whereiam = rev-parse --abbrev-ref HEAD
 
-  # assuming
+  # files manipulations
   assume   = update-index --assume-unchanged
   unassume = update-index --no-assume-unchanged
   assumed  = "!git ls-files -v | grep ^h | cut -c 3-"
+  revert-file = checkout HEAD -- 
 
   # patch from diff
   patch-create = diff --no-prefix
