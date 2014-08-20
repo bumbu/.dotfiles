@@ -22,6 +22,7 @@
   # commits
   ci = commit
   cim = commit -m
+  cem = !bash -c 'git commit -m \":`. ~/emoji.sh`: $0\"'
   ciam = commit -a -m
   ciallm = !git add -A && git commit -m
   amend = commit -a --amend
