@@ -1,11 +1,19 @@
 {
   // View
   "bold_folder_labels": true
-, "font_size": 11.0
+, "font_size": 13.0
+, "font_face": "Akkurat-Mono"
 , "highlight_line": true
 , "show_tab_close_buttons": false
 , "folder_exclude_patterns": ["node_modules", ".git"]
 , "scroll_past_end": true
+, "folder_exclude_patterns":
+  [
+    "node_modules"
+  , ".git"
+  , ".svn"
+  , ".idea"
+  ]
 
   // System
 , "detect_slow_plugins": false
