@@ -13,7 +13,7 @@
   algorithm = patience
 
 [push]
-  default = matching
+  default = simple
 
 [alias]
   # show all aliases
