@@ -1,34 +1,32 @@
 {
-  // View
-  "bold_folder_labels": true
-, "font_size": 13.0
-, "font_face": "Akkurat-Mono"
-, "highlight_line": true
-, "show_tab_close_buttons": false
-, "folder_exclude_patterns": ["node_modules", ".git"]
-, "scroll_past_end": true
-, "folder_exclude_patterns":
-  [
-    "node_modules"
-  , ".git"
-  , ".svn"
-  , ".idea"
-  ]
-
-  // System
-, "detect_slow_plugins": false
-, "ignored_packages":
-  [
-    "Vintage"
-  ]
-, "update_check": false
-
-  // Tabulation
-, "tab_size": 2
-, "translate_tabs_to_spaces": true
-, "trim_trailing_white_space_on_save": true
-, "ensure_newline_at_eof_on_save": true
-
-  // Edit
-, "drag_text": false
+	"binary_file_patterns":
+	[
+		"public/*"
+	],
+	"bold_folder_labels": true,
+	"color_scheme": "Packages/Tomorrow Color Schemes/Tomorrow-Night.tmTheme",
+	"detect_slow_plugins": true,
+	"disable_tab_abbreviations_on_auto_complete": true,
+	"drag_text": false,
+	"ensure_newline_at_eof_on_save": true,
+	"folder_exclude_patterns":
+	[
+		"node_modules",
+		".git",
+		".svn",
+		".idea"
+	],
+	"font_face": "Akkurat-Mono",
+	"font_size": 13.0,
+	"highlight_line": true,
+	"ignored_packages":
+	[
+		"Vintage"
+	],
+	"scroll_past_end": true,
+	"show_tab_close_buttons": false,
+	"tab_size": 2,
+	"translate_tabs_to_spaces": true,
+	"trim_trailing_white_space_on_save": true,
+	"update_check": false
 }
