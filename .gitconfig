@@ -35,6 +35,10 @@
   delete = branch -d
   delete-merged-branches = "!f() { git checkout --quiet master && git branch --merged | grep --invert-match '\\*' | xargs -n 1 git branch --delete; git checkout --quiet @{-1}; }; f"
   whereiam = rev-parse --abbrev-ref HEAD
+  
+  # navigation
+  prev = checkout HEAD^1
+  next = "!sh -c 'git log --reverse --pretty=%H master | awk \"/$(git rev-parse HEAD)/{getline;print}\" | xargs git checkout'"
 
   # files manipulations
   assume   = update-index --assume-unchanged
