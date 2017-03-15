@@ -34,7 +34,7 @@
   new = checkout -b
   delete = branch -d
   delete-merged-branches = "!f() { git checkout --quiet master && git branch --merged | grep --invert-match '\\*' | xargs -n 1 git branch --delete; git checkout --quiet @{-1}; }; f"
-  whereiam = rev-parse --abbrev-ref HEAD
+  current = rev-parse --abbrev-ref HEAD
   
   # navigation
   prev = checkout HEAD^1
@@ -79,3 +79,7 @@
 
   # diff specific revision
   dr  = "!f() { git diff "$1"^.."$1"; }; f"
+  
+  # list all changed files between current branch and a given branch
+  # e.g. git changed-files master
+  changed-files = "!f() { git diff --name-only $(git current) $(git merge-base $(git current) $1); }; f"
