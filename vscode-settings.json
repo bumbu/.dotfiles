@@ -1,0 +1,24 @@
+// Place your settings in this file to overwrite default and user settings.
+{
+    "editor.fontFamily": "Operator Mono, Menlo, Monaco, 'Courier New', monospace",
+    "editor.fontSize": 13.5,
+    "editor.fontWeight": "200",
+    "workbench.colorTheme": "Tomorrow Night",
+    "workbench.iconTheme": "ayu",
+    "code-runner.executorMap": {
+        "python": "python",
+        "java": "cd $dir && javac $fileName && java $fileNameWithoutExt"
+    },
+    "code-runner.clearPreviousOutput": true,
+    "code-runner.saveFileBeforeRun": true,
+    "code-runner.runInTerminal": false,
+    "code-runner.preserveFocus": false,
+    "code-runner.enableAppInsights": false,
+    "code-runner.ignoreSelection": true,
+    "java.referencesCodeLens.enabled": false,
+    "explorer.openEditors.visible": 0,
+    "window.zoomLevel": 0,
+    "editor.tabSize": 2,
+    "workbench.editor.showTabs": false,
+    "experimentalDecorators": true
+}
